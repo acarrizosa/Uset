@@ -25,7 +25,7 @@ uset<-function(
         if(!is.data.frame(dat)){
                 stop("Input data should be a data frame")
         }
-        if(any(names(dat)!=c("x", "y"))){
+        if(any(names(dat)[1:2]!=c("x", "y"))){
                 stop("First two variables of input data should be named 'x' and 'y'")
         }
         if(clusters=="default"){
