@@ -498,7 +498,7 @@ uset<-function(
                               uset=uset,
                               g))
           }
-         gc()
+         gc(verbose=FALSE)
 }
 
 
