@@ -362,8 +362,8 @@ uset<-function(
                   #========================================================================
                   # Make Coarse Grid
 
-                  x<-seq(center[,1]-(yolkint.coarse),center[,1]+(yolkint.coarse), by=yolkint.fine)
-                  y<-seq(center[,2]-(yolkint.coarse),center[,2]+(yolkint.coarse), by=yolkint.fine)
+                  x<-seq(center[,1]-(yolkint.coarse*2),center[,1]+(yolkint.coarse*2), by=yolkint.fine)
+                  y<-seq(center[,2]-(yolkint.coarse*2),center[,2]+(yolkint.coarse*2), by=yolkint.fine)
 
                   bootstraps<-lapply(1:length(y), function(num) data.frame(x, y[num]))
                   bootstraps2<-bootstraps[[1]]
