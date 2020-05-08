@@ -3,6 +3,9 @@ Type: Package
 Title: Uncovered Set (Calculating Uncovered Set and Yolk from Two-Dimensional Ideal Points)
 Version: 0.1.1
 Author: Andrés Carrizosa
+Date: 2019-12-08
+Authors@R: c(
+    person("Andrés", "Carrizosa", email = "amc27@rice.edu", role = c("aut", "cre")))
 Maintainer: Andrés Carrizosa <amc27@rice.edu>
 Description: This package takes two dimensional ideal points and it calculates the uncovered set for these data.  
 Data must be submitted to the function in a data frame form, 
@@ -13,6 +16,14 @@ are calculated, and, by default, 1,000 points are placed on all median lines.  F
 smallest distance from each line.  Then we find, from these smallest distances, the largest of the smallest distances.  That is, I find the median line that is furthest away from the point.  The point that minimizes the furthest distance
 in the uncovered-set-defined square is chosen as the center of the yolk.  The radius of the yolk becomes the distance of this chosen point to the furthest line.  When plotting, this function returns the ideal points, median lines, the uncovered set,
 (whether coarse or fine), the center of the yolk, the yolk, and the 4r circle.  The function itself returns all these data as well, including the radius of the yolk, in a list.
+Imports:
+	foreach, 
+	parallel, 
+	doParallel, 
+	ggplot2, 
+	MASS, 
+	stringr, 
+	devtools
 
 License: none
 Encoding: UTF-8
