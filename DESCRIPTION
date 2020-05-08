@@ -4,8 +4,6 @@ Title: Uncovered Set (Calculating Uncovered Set and Yolk from Two-Dimensional Id
 Version: 0.1.1
 Author: Andrés Carrizosa
 Date: 2019-12-08
-Authors@R: c(
-    person("Andrés", "Carrizosa", email = "amc27@rice.edu", role = c("aut", "cre")))
 Maintainer: Andrés Carrizosa <amc27@rice.edu>
 Description: This package takes two dimensional ideal points and it calculates the uncovered set for these data.  
 Data must be submitted to the function in a data frame form, 
