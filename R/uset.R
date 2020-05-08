@@ -45,6 +45,7 @@ uset<-function(
         startall<-Sys.time()
         #get necessary packages
           require(foreach)
+          require(parallel)
           require(doParallel)
           require(ggplot2)
           require(MASS)
