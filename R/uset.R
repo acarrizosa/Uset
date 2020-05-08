@@ -20,6 +20,17 @@ uset<-function(
      clusters="default"){
 
         #===================
+        # get necessary packages
+        #===================
+
+        require(foreach)
+        require(parallel)
+        require(doParallel)
+        require(ggplot2)
+        require(MASS)
+        require(stringr)
+
+        #===================
         # Check for any specification mistakes
         #===================
         if(!is.data.frame(dat)){
@@ -43,13 +54,6 @@ uset<-function(
         # Start function
         #===================
         startall<-Sys.time()
-        #get necessary packages
-          require(foreach)
-          require(parallel)
-          require(doParallel)
-          require(ggplot2)
-          require(MASS)
-          require(stringr)
 
           workers<-makeCluster(clusters-1)
           registerDoParallel(workers)
