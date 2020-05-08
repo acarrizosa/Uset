@@ -54,6 +54,14 @@ Because the center of the yolk is contained by the uncovered set, the center of 
 The radius of the yolk becomes the distance of this chosen point to the furthest line.  When plotting, this function returns the ideal points, median lines, the uncovered set, (whether coarse or fine), the center of the yolk, the yolk, and the 4r circle.
 
 The function itself returns all these data as well, including the radius of the yolk, in a list.
+
+To a great extent this procedure has been based out on the grid search procedure developed by:
+
+Bianco, William, Ivan Jeliazkov and Itai Sened (2004) "The Uncovered Set and the Limits of Legislative Action" Political Analysis 12:256-276
+
+Please cite this package as:
+
+Carrizosa, Andres (2020). uset: a simple function to extract the uncovered set and yolk from two-dimensional ideal points. URL: www.github.com/acarrizosa/uset
 }
 
 \examples{
