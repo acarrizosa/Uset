@@ -2,6 +2,10 @@
 
 A simple function to extract the uncovered set, median lines and yolk from a set of two-dimensional ideal points.
 
+Please cite as:
+
+Carrizosa, Andres (2020). uset: a simple function to extract the uncovered set and yolk from two-dimensional ideal points. URL: www.github.com/acarrizosa/uset
+
 ## How to install
 
 In order to install the latest version of the `uset` package first you have to install the remotes
