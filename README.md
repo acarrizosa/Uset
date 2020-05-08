@@ -50,7 +50,7 @@ Several arguments can be passed on to the uset function.  These are all the opti
 
 `args(uset)`
 
-        function (dat, uset.coarse = TRUE, uset.fine = FALSE, uint.coarse = 0.1, 
+        function(dat, uset.coarse = TRUE, uset.fine = FALSE, uint.coarse = 0.1, 
                 uint.fine = 0.02, threshold = 0.5, yolk = FALSE, yolkint.coarse = 0.05, 
                 yolkint.fine = 0.01, points.on.line = 1000, plotuset = TRUE, 
                 clusters = "default")
