@@ -1,5 +1,7 @@
 # uset
 
+A simple function to extract the uncovered set, median lines and yolk from a set of two-dimensional ideal points.
+
 ## How to install
 
 In order to install the latest version of the `uset` package first you have to install the remotes
