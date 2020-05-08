@@ -1,8 +1,8 @@
-\name{hello}
-\alias{hello}
-\title{Hello, World!}
+\name{uset}
+\alias{uset}
+\title{Uncovered Set Calculation}
 \usage{
-hello()
+uset()
 }
 \description{
 Prints 'Hello, world!'.
