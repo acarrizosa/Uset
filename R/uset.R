@@ -55,7 +55,7 @@ uset<-function(
         #===================
         startall<-Sys.time()
 
-          workers<-makeCluster(clusters-1)
+          workers<-makeCluster(clusters)
           registerDoParallel(workers)
 
           circleFun <- function(center = c(0,0),diameter = .2, npoints = 100){
