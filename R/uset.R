@@ -10,7 +10,7 @@ uset<-function(
      uset.coarse=TRUE,
      uset.fine=FALSE,
      uint.coarse=.1,
-     uint.fine=.01,
+     uint.fine=.02,
      threshold=0.5,
      yolk=FALSE,
      yolkint.coarse=.05,
@@ -41,9 +41,11 @@ uset<-function(
         }
         if(clusters=="default"){
                 clusters<-1
-        } else if(clusters=="optimal"){
+        }
+        if(clusters=="optimal"){
                 clusters<-detectCores()-1
-        } else {
+        }
+        if(clusters!="default" & clusters!="optimal") {
                 clusters<-clusters
         }
         if(!is.numeric(clusters) | clusters>detectCores()){

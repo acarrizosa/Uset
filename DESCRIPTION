@@ -1,11 +1,19 @@
 Package: uset
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Uncovered Set (Calculating Uncovered Set and Yolk from Two-Dimensional Ideal Points)
 Version: 0.1.1
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Andrés Carrizosa
+Maintainer: Andrés Carrizosa <amc27@rice.edu>
+Description: This package takes two dimensional ideal points and it calculates the uncovered set for these data.  
+Data must be submitted to the function in a data frame form, 
+and the first two columns of the data frame must be named "x" and "y respectively.  The function carries out a grid search procedure to find the uncovered set and yolk.  First a coarse search is carried out to find the general 
+contours of the uncovered set.  Then a fine search is carried out to narrow down the uncovered set.  Once the uncovered set is calculated (whether the fine search is carried out or not is optional), this contour of the 
+uncovered set is used to search for the yolk.  Because the center of the yolk is contained by the uncovered set, the center of the yolk is only searched for within a square that contains the uncovered set.  Median lines
+are calculated, and, by default, 1,000 points are placed on all median lines.  From this, each point in the uncovered-set-defined square is used to take the distance from each point on the median lines.  Then, we take the 
+smallest distance from each line.  Then we find, from these smallest distances, the largest of the smallest distances.  That is, I find the median line that is furthest away from the point.  The point that minimizes the furthest distance
+in the uncovered-set-defined square is chosen as the center of the yolk.  The radius of the yolk becomes the distance of this chosen point to the furthest line.  When plotting, this function returns the ideal points, median lines, the uncovered set,
+(whether coarse or fine), the center of the yolk, the yolk, and the 4r circle.  The function itself returns all these data as well, including the radius of the yolk, in a list.
+
+License: none
 Encoding: UTF-8
 LazyData: true
