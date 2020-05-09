@@ -1,6 +1,6 @@
 # uset
 
-A simple function to extract the uncovered set, median lines and yolk from a set of two-dimensional ideal points.  To a great extent this procedure has been based out on the grid search procedure developed by:
+A simple function to extract the uncovered set, median lines and yolk from a set of two-dimensional ideal points.  To a great extent this procedure has been baseds on the grid search procedure developed by:
 
 Bianco, William, Ivan Jeliazkov and Itai Sened (2004) "The Uncovered Set and the Limits of Legislative Action" Political Analysis 12:256-276
 
