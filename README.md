@@ -26,7 +26,7 @@ function depends on several packages so be sure to install the following package
 
 once all these packages are installed you are ready to use the uset package.
 
-## Run time Disclaimer
+## Run time disclaimer
 
 Warning: This function can take a long time to run even if specified correctly, but especially if specified incorrectly.  Please read through the options available to minimize run time as much as possible.
 
@@ -85,7 +85,7 @@ Several arguments can be passed on to the uset function.  These are all the opti
 
 `plotuset` specifies whether the `uset` function should return a plot or not.  If TRUE, `uset` returns a ggplot object plotting ideal points, median lines, the uncovered set, the yolk, and the 4r circle, depending on which of these were requested from the `uset` function in previous arguments.
 
-`clusters` determines the number of cores to use for estimation.  This can be specified as either "default", or "optimal", or it can be assigned a numeric value. "default" runs the function using a single core.  "optimal" takes the number of cores of your computer, minus one, and assigns it to the cluseters variable.  Finally, one may also assign a number to this option, such as `clusters=5`.  If a number is chosen, the number must be smaller than the total number of cores of the computer trying to run the function.  Otherwise the function stops and returns an error.
+`clusters` determines the number of cores to use for estimation.  This can be specified as either "default", or "optimal", or it can be assigned a numeric value. "default" runs the function using a single core.  "optimal" takes the number of cores of your computer, minus one, and assigns it to the clusters variable.  Finally, one may also assign a number to this option, such as `clusters=5`.  If a number is chosen, the number must be smaller than the total number of cores of the computer trying to run the function.  Otherwise the function stops and returns an error.
 
 ### Output
 
@@ -148,7 +148,7 @@ If the `plotuset` option is set to TRUE, the function also stores this ggplot ob
 
 <img src="data/output.png" alt="drawing" width="500" height="500"/>
 
-### Trial Run
+### Trial run
 
 This is an example of how to run a very short search for the uncovered set.  Runtime for this should be around 5-10 minutes in a normal laptop computer.  
 
