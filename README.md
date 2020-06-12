@@ -163,7 +163,7 @@ This is an example of how to run a very short search for the uncovered set.  Run
                 
         output2
                 
-Note that although this example does not provide a good estimate of the uncovered set it *can* quickly provide an adequate estimate of the yolk if we set yolkint.fine to 0.01.  That is, if the exact shape of the uncovered set is not of interest, it may be more efficient to only estimate the yolk, which can be found pretty quicly.  It is always quicker to include a coarse search for the uncovered set though, because it can point the function to a narrower search area for the uncovered set.  
+Note that although this example does not provide a good estimate of the uncovered set it *can* quickly provide an adequate estimate of the yolk if we set yolkint.fine to 0.01.  That is, if the exact shape of the uncovered set is not of interest, it may be more efficient to only estimate the yolk, which can be found pretty quicly.  It is always quicker to include a coarse search for the uncovered set though, because it can point the function to a narrower search area for the yolk.  
 
 
 
